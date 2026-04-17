@@ -11,44 +11,43 @@
 * [backend app](http://hyperlinkToGihubOrGitlab)
 *Nota*: si utiliza un monorepo indicar un solo link con fullstack app.
 
-## Tema: SportAll
+## Tema: SportBook
 ### Descripción
-*Aplicación para reservar espacios en un complejo deportivo para distintos tipo de actividades*
+*Aplicación que permite a los usuarios reservar canchas deportivas dentro de un complejo , gestionando horarios disponibles, reservas y administración del sistema.*
 
 ### Modelo
-<img width="1382" height="971" alt="image" src="https://github.com/user-attachments/assets/a0c75106-0c34-4715-967e-c4e36ac583a0" />
+<img width="4672" height="6135" alt="User and Reservation-2026-04-17-042924" src="https://github.com/user-attachments/assets/4aeed8fe-3fce-4304-afba-75565c65f084" />
 
-Link con la imagen del modelo de dominio: https://drive.google.com/file/d/1gXwBSWCO8L0tnm3WbJGHOtN9KUj2y0FZ/view?usp=sharing
+Link con la imagen del modelo de dominio: [https://mermaid.ai/app/projects/e33a41a0-43dd-4124-b776-9b6882c04f7d/diagrams/1ec81a37-bb9c-4a99-b88e-4cb14f082692/share/invite/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkb2N1bWVudElEIjoiMWVjODFhMzctYmI5Yy00YTk5LWI4OGUtNGNiMTRmMDgyNjkyIiwiYWNjZXNzIjoiQ29tbWVudCIsImlhdCI6MTc3NjQwMTM1NH0.I6Px--gVPHryBvjZcAeUfpaIoc6KpST5bADxA_eow](https://mermaid.ai/app/projects/e33a41a0-43dd-4124-b776-9b6882c04f7d/diagrams/1ec81a37-bb9c-4a99-b88e4cb14f082692/share/invite/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkb2N1bWVudElEIjoiMWVjODFhMzctYmI5Yy00YTk5LWI4OGUtNGNiMTRmMDgyNjkyIiwiYWNjZXNzIjoiQ29tbWVudCIsImlhdCI6MTc3NjQwMTQ3OX0.wAi_50E74Y_OZSxy6gFUXDGzYGfR4IT-6-E7IgpKOKw)
 
 ## Alcance Funcional 
 
 ### Alcance Mínimo
+ 
 
-*Nota*: el siguiente es un ejemplo para un grupo de 3 integrantes para un sistema de hotel. El 
+| Req                     | Detalle                                                                                                                                                                                                                                                                   |
+| :---------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| CRUD simple             | 1. CRUD TipoCancha<br>2. CRUD TipoEvento<br>3. CRUD Equipamiento                                                                                                                                                                                                          |
+| CRUD dependiente        | 1. CRUD Cancha {depende de} CRUD TipoCancha<br>2. CRUD Reserva {depende de} CRUD Usuario y CRUD Cancha                                                                                                                                                                    |
+| Listado<br>+<br>detalle | 1. Listado de canchas filtrado por tipo de cancha, muestra nombre y precio => detalle CRUD Cancha<br>2. Listado de reservas filtrado por fecha o cancha, muestra fecha, horario, estado y usuario => detalle muestra datos completos de la reserva, evento y equipamiento |
+| CUU/Epic | 1. Reservar una cancha<br>2. Gestionar reservas (cancelar/modificar) |                                                                                                                               |
 
-Regularidad:
-|Req|Detalle|
-|:-|:-|
-|CRUD simple|1. CRUD Usuarios<br>2. CRUD Tipos de Cancha<br>3. CRUD Tipos de Evento|
-|CRUD dependiente|1. CRUD Cancha {depende de} CRUD Tipo Cancha<br>2. CRUD Reserva {depende de} CRUD Usuario|
-|Listado<br>+<br>detalle| 1. Listado de reservas, con fecha de reserva, hora inicio, hora fin, usuario, numero de cancha => detalle CRUD Reserva<br> 2. Listado de canchas disponibles filtrado por rango de fecha, estado y nombre del cliente => detalle muestra datos completos de la reserva y del cliente|
-|CUU/Epic|1. Reservar una cancha<br>2. Realizar el check-in de una reserva|
 
 
 Adicionales para Aprobación
-|Req|Detalle|
-|:-|:-|
-|CRUD |1. CRUD Tipo Habitacion<br>2. CRUD Servicio<br>3. CRUD Localidad<br>4. CRUD Provincia<br>5. CRUD Habitación<br>6. CRUD Empleado<br>7. CRUD Cliente|
-|CUU/Epic|1. Reservar una habitación para la estadía<br>2. Realizar el check-in de una reserva<br>3. Realizar el check-out y facturación de estadía y servicios|
+| Req      | Detalle                                                                                                                                                    |
+| :------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| CRUD     | 1. CRUD Usuario<br>2. CRUD TipoCancha<br>3. CRUD Cancha<br>4. CRUD Reserva<br>5. CRUD Evento<br>6. CRUD TipoEvento<br>7. CRUD Equipamiento<br>8. CRUD Pago |
+| CUU/Epic | 1. Reservar una cancha<br>2. Cancelar/modificar reserva<br>3. Registrar pago de una reserva |
+
 
 
 ### Alcance Adicional Voluntario
 
-*Nota*: El Alcance Adicional Voluntario es opcional, pero ayuda a que la funcionalidad del sistema esté completa y será considerado en la nota en función de su complejidad y esfuerzo.
+| Req      | Detalle                                                                                                                     |
+| :------- | :-------------------------------------------------------------------------------------------------------------------------- |
+| Listados | 1. Listado de reservas por usuario mostrando historial<br>2. Listado de disponibilidad por cancha y fecha (tipo calendario) |
+| CUU/Epic | 1. Cancelación automática con penalización<br>2. Agregar equipamiento a una reserva existente                               |
+| Otros    | 1. Notificación de confirmación de reserva (email o simulación)<br>2. Validación de no superposición de reservas            |
 
-|Req|Detalle|
-|:-|:-|
-|Listados |1. Estadía del día filtrado por fecha muestra, cliente, habitaciones y estado <br>2. Reservas filtradas por cliente muestra datos del cliente y de cada reserve fechas, estado cantidad de habitaciones y huespedes|
-|CUU/Epic|1. Consumir servicios<br>2. Cancelación de reserva|
-|Otros|1. Envío de recordatorio de reserva por email|
 
