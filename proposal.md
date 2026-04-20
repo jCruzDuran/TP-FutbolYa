@@ -28,7 +28,7 @@ Link con la imagen del modelo de dominio: [https://mermaid.ai/app/projects/e33a4
 | Req                     | Detalle                                                                                                                                                                                                                                                                   |
 | :---------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | CRUD simple             | 1. CRUD TipoCancha<br>2. CRUD TipoEvento<br>3. CRUD Equipamiento                                                                                                                                                                                                          |
-| CRUD dependiente        | 1. CRUD Cancha {depende de} CRUD TipoCancha<br>2. CRUD Reserva {depende de} CRUD Usuario y CRUD Cancha                                                                                                                                                                    |
+| CRUD dependiente        | 1. CRUD Cancha {depende de} CRUD TipoCancha<br>2. CRUD Evento {depende de} CRUD TipoEvento                                                                                                                                                                    |
 | Listado<br>+<br>detalle | 1. Listado de canchas filtrado por tipo de cancha, muestra nombre y precio => detalle CRUD Cancha<br>2. Listado de reservas filtrado por fecha o cancha, muestra fecha, horario, estado y usuario => detalle muestra datos completos de la reserva, evento y equipamiento |
 | CUU/Epic | 1. Reservar una cancha<br>2. Gestionar reservas (cancelar/modificar) |                                                                                                                               |
 
@@ -37,7 +37,7 @@ Link con la imagen del modelo de dominio: [https://mermaid.ai/app/projects/e33a4
 Adicionales para Aprobación
 | Req      | Detalle                                                                                                                                                    |
 | :------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| CRUD     | 1. CRUD Usuario<br>2. CRUD TipoCancha<br>3. CRUD Cancha<br>4. CRUD Reserva<br>5. CRUD Evento<br>6. CRUD TipoEvento<br>7. CRUD Equipamiento<br>8. CRUD Pago |
+| CRUD     | 1. CRUD Usuario<br>2. CRUD TipoCancha<br>3. CRUD Cancha<br>4. CRUD Evento<br>5. CRUD TipoEvento<br>6. CRUD Equipamiento<br>7. CRUD Pago |
 | CUU/Epic | 1. Reservar una cancha<br>2. Cancelar/modificar reserva<br>3. Registrar pago de una reserva |
 
 
