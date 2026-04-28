@@ -38,7 +38,7 @@ Adicionales para Aprobación
 | Req      | Detalle                                                                                                                                                    |
 | :------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | CRUD     | 1. CRUD Usuario<br>2. CRUD TipoCancha<br>3. CRUD Cancha<br>4. CRUD Evento<br>5. CRUD TipoEvento<br>6. CRUD Equipamiento<br>7. CRUD Pago |
-| CUU/Epic | 1. Reservar una cancha<br>2. Cancelar/modificar reserva<br>3. Registrar pago de una reserva |
+| CUU/Epic | 1. Reservar una cancha con selección de equipamiento<br>2. Registrar evento<br>3. Registrar pago de una reserva |
 
 
 
