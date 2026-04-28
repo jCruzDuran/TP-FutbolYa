@@ -48,6 +48,6 @@ Adicionales para Aprobación
 | :------- | :-------------------------------------------------------------------------------------------------------------------------- |
 | Listados | 1. Listado de reservas por usuario mostrando historial<br>2. Listado de disponibilidad por cancha y fecha (tipo calendario) |
 | CUU/Epic | 1. Cancelación automática con penalización<br>2. Agregar equipamiento a una reserva existente                               |
-| Otros    | 1. Notificación de confirmación de reserva (email o simulación)<br>2. Validación de no superposición de reservas            |
+| Otros    | 1. Notificación de confirmación de reserva<br>2. Visualización de disponibilidad en formato calendario            |
 
 
