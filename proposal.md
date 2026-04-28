@@ -16,9 +16,9 @@
 *Aplicación que permite a los usuarios reservar canchas deportivas dentro de un complejo , gestionando horarios disponibles, reservas y administración del sistema.*
 
 ### Modelo
-<img width="4672" height="6135" alt="User and Reservation-2026-04-17-042924" src="https://github.com/user-attachments/assets/4aeed8fe-3fce-4304-afba-75565c65f084" />
+<img width="5207" height="5830" alt="TP SportBook-2026-04-28-202225" src="https://github.com/user-attachments/assets/489390f0-72b4-4335-af4f-ba4b0ddc7f1b" />
 
-Link con la imagen del modelo de dominio: [https://mermaid.ai/app/projects/e33a41a0-43dd-4124-b776-9b6882c04f7d/diagrams/1ec81a37-bb9c-4a99-b88e-4cb14f082692/share/invite/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkb2N1bWVudElEIjoiMWVjODFhMzctYmI5Yy00YTk5LWI4OGUtNGNiMTRmMDgyNjkyIiwiYWNjZXNzIjoiQ29tbWVudCIsImlhdCI6MTc3NjQwMTM1NH0.I6Px--gVPHryBvjZcAeUfpaIoc6KpST5bADxA_eow](https://mermaid.ai/app/projects/e33a41a0-43dd-4124-b776-9b6882c04f7d/diagrams/1ec81a37-bb9c-4a99-b88e4cb14f082692/share/invite/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkb2N1bWVudElEIjoiMWVjODFhMzctYmI5Yy00YTk5LWI4OGUtNGNiMTRmMDgyNjkyIiwiYWNjZXNzIjoiQ29tbWVudCIsImlhdCI6MTc3NjQwMTQ3OX0.wAi_50E74Y_OZSxy6gFUXDGzYGfR4IT-6-E7IgpKOKw)
+Link con la imagen del modelo de dominio:https://mermaid.ai/app/projects/e33a41a0-43dd-4124-b776-9b6882c04f7d/diagrams/1ec81a37-bb9c-4a99-b88e-4cb14f082692/version/v0.1/edit
 
 ## Alcance Funcional 
 
