@@ -16,9 +16,10 @@
 *Aplicación que permite a los usuarios reservar canchas deportivas dentro de un complejo , gestionando horarios disponibles, reservas y administración del sistema.*
 
 ### Modelo
-<img width="5207" height="5830" alt="TP SportBook-2026-04-28-202225" src="https://github.com/user-attachments/assets/489390f0-72b4-4335-af4f-ba4b0ddc7f1b" />
+<img width="5207" height="5830" alt="TP SportBook-2026-04-29-132020" src="https://github.com/user-attachments/assets/8e8dbda3-a2c7-4e74-9bb2-aaeb06cb4f6e" />
 
-Link con la imagen del modelo de dominio:https://mermaid.ai/app/projects/e33a41a0-43dd-4124-b776-9b6882c04f7d/diagrams/1ec81a37-bb9c-4a99-b88e-4cb14f082692/version/v0.1/edit
+
+Link con la imagen del modelo de dominio:[https://mermaid.ai/app/projects/e33a41a0-43dd-4124-b776-9b6882c04f7d/diagrams/1ec81a37-bb9c-4a99-b88e-4cb14f082692/version/v0.1/edit](https://mermaid.ai/d/1ec81a37-bb9c-4a99-b88e-4cb14f082692)
 
 ## Alcance Funcional 
 
@@ -28,7 +29,7 @@ Link con la imagen del modelo de dominio:https://mermaid.ai/app/projects/e33a41a
 | Req                     | Detalle                                                                                                                                                                                                                                                                   |
 | :---------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | CRUD simple             | 1. CRUD TipoCancha<br>2. CRUD TipoEvento<br>3. CRUD Equipamiento                                                                                                                                                                                                          |
-| CRUD dependiente        | 1. CRUD Cancha {depende de} CRUD TipoCancha<br>2. CRUD Evento {depende de} CRUD TipoEvento                                                                                                                                                                    |
+| CRUD dependiente        | 1. CRUD Cancha {depende de} CRUD TipoCancha<br>2. CRUD Evento {depende de} CRUD TipoEvento y CRUD Reserva                                                                                                                                                                    |
 | Listado<br>+<br>detalle | 1. Listado de canchas filtrado por tipo de cancha, muestra nombre y precio => detalle CRUD Cancha<br>2. Listado de reservas filtrado por fecha o cancha, muestra fecha, horario, estado y usuario => detalle muestra datos completos de la reserva, evento y equipamiento |
 | CUU/Epic | 1. Reservar una cancha<br>2. Gestionar reservas (cancelar/modificar) |                                                                                                                               |
 
@@ -38,7 +39,7 @@ Adicionales para Aprobación
 | Req      | Detalle                                                                                                                                                    |
 | :------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | CRUD     | 1. CRUD Usuario<br>2. CRUD TipoCancha<br>3. CRUD Cancha<br>4. CRUD Evento<br>5. CRUD TipoEvento<br>6. CRUD Equipamiento<br>7. CRUD Pago |
-| CUU/Epic | 1. Reservar una cancha con selección de equipamiento<br>2. Registrar evento<br>3. Registrar pago de una reserva |
+| CUU/Epic | 1. Reservar una cancha con selección de equipamiento<br>2. Agregar evento a la reserva<br>3. Registrar pago de una reserva |
 
 
 
